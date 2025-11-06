@@ -8,3 +8,17 @@
     width: 12rem;
     height: auto;
 }
+
+.btn-voltar {
+   font: var(--link);
+   color: var(--color-brand);
+   display: block;
+   text-decoration: none;
+   
+   margin-bottom: 0.5rem;
+   transition: color 0.2s ease-in-out;
+}
+
+.btn-voltar:hover {
+    color: var(--content-primary);
+}
