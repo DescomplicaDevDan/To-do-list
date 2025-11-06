@@ -22,3 +22,11 @@
 .btn-voltar:hover {
     color: var(--content-primary);
 }
+
+.page-title {
+    font: var(--title);
+    color: var(--content-primary);
+
+    margin-top: 0;
+    margin-bottom: 2.5rem;
+}
