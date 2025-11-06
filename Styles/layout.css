@@ -1,0 +1,10 @@
+.app-header {
+    text-align: center;
+    padding: 1.56rem 0;
+    width: 100%; 
+}
+
+.logo {
+    width: 12rem;
+    height: auto;
+}
