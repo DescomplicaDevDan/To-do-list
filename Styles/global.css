@@ -31,3 +31,25 @@
     --p: 500 1rem/1.25 var(--font-family);
     --link: 500 0.75rem/1.14 var(--font-family);
 }
+
+body {
+    background-color: var(--background-primary);
+}
+
+#app-wrapper {
+    max-width: 900px;
+    width: 100%;
+
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.container {
+    max-width: 600px;
+    width: 100%;
+
+    margin-right: auto;
+    margin-left: auto;
+
+    padding: 20px;
+}
