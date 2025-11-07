@@ -37,7 +37,7 @@ body {
 }
 
 #app-wrapper {
-    max-width: 900px;
+    max-width: 627px;
     width: 100%;
 
     margin-right: auto;
@@ -45,11 +45,6 @@ body {
 }
 
 .container {
-    max-width: 600px;
+    max-width: 627px;
     width: 100%;
-
-    margin-right: auto;
-    margin-left: auto;
-
-    padding: 20px;
 }
