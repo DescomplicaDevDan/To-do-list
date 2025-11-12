@@ -33,6 +33,7 @@
 }
 
 body {
+    padding-bottom: 4rem;
     background-color: var(--background-primary);
 }
 
