@@ -204,14 +204,35 @@
 }
 
 .notification-error {
+    position: fixed;
+    top 0;
+    left: 50%;
+    transform: translateX(-50%) translateY(-100%);
+
+    max-width: 39.1875rem;
+    width: 90%;
+
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0.75rem 0.75rem;;
+
+    padding: 0.75rem 0.75rem;
     background-color: var(--color-danger); 
     border-radius: 0.825rem; 
     margin-top: 2.25rem; 
-    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.1);
+
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+    z-index: 100;
+
+    transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.notification-error.show {
+    transform: translateX(-50%) translateY(1rem); /* Desliza para 20px do topo */
+    opacity: 1; 
+    pointer-events: auto; /* Permite o clique no X */
 }
 
 .notification-error p {
@@ -280,7 +301,5 @@
     font: var(--title);
     color: #111827;
 }
-
-
 
 }
