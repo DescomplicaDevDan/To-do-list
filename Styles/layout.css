@@ -25,7 +25,7 @@
 }
 
 .btn-voltar strong {
-    font-weight: 500; 
+    font-weight: 600; 
 }
 
 .btn-voltar .arrow-icon {
@@ -205,7 +205,7 @@
 
 .notification-error {
     position: fixed;
-    top 0;
+    bottom: 0;
     left: 50%;
     transform: translateX(-50%) translateY(-100%);
 
@@ -230,14 +230,14 @@
 }
 
 .notification-error.show {
-    transform: translateX(-50%) translateY(1rem); /* Desliza para 20px do topo */
+    transform: translateX(-50%) translateY(-5rem); 
     opacity: 1; 
-    pointer-events: auto; /* Permite o clique no X */
+    pointer-events: auto; 
 }
 
 .notification-error p {
     font: var(--p);
-    color: var(--always-write); /* Texto branco */
+    color: var(--always-write);
     margin: 0;
     display: flex;
     align-items: center;
