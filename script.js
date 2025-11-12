@@ -2,23 +2,6 @@ const addForm = document.querySelector('.add-form');
 const inputItem = document.getElementById('input-item');
 const listaItens = document.querySelector('.lista-itens');
 
-function adicionarItem(event) {
-    
-    event.preventDefault();
-    
-    const nomeItem = inputItem.Value.trim();
-
-    if (nomeItem) {
-        console.log(`Novo item adicionado: ${nomeItem}`);
-        inputItem.value = '';
-    } else {
-        console.log("O campo do item não pode estar vazio.");
-    }
-
-    addForm.addEventListener('submit', adicionarItem);
-
-    console.log("Quicklist Script inicializado!");
-}
 
 function criarElementoLi (nomeItem) {
     const novoLi = document.createElement('li');
@@ -55,6 +38,21 @@ function criarElementoLi (nomeItem) {
         }
     }
 
-    addForm.addEventListener('submit', adicionarItem);
+function removerItem(event) {
+    const botaoDelete = event.target.closest('.btn-delete');
+    
+    if (botaoDelete) {
+        const itemLi = botaoDelete.closest('.item-lista');
 
-    console.log("Quicklist Script inicializado!");
+        if (itemLi) {
+            listaItens.removeChild(itemLi);
+
+            console.log("Item removido com sucesso!");
+        }
+    }
+}
+
+addForm.addEventListener('submit', adicionarItem);
+listaItens.addEventListener('click', removerItem);
+
+console.log("Quicklist Script inicializado e funcional!");
