@@ -68,12 +68,6 @@ quicklist/
 
 -----
 
-## 📄 Licença
-
-Este projeto está licenciado sob a **Licença MIT** – veja o arquivo `LICENSE.md` para mais detalhes (se você for criar o arquivo de licença).
-
------
-
 ## ✍️ Autor
 
 Desenvolvido por:
