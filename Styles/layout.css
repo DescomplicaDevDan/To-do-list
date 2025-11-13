@@ -25,13 +25,14 @@
 }
 
 .btn-voltar strong {
-    font-weight: 600; 
+    font: (--link);
+    font-weight: 500; 
 }
 
 .btn-voltar .arrow-icon {
    
-    width: 0.8rem;
-    height: 0.8rem;
+    width: 0.7rem;
+    height: 0.7rem;
     
     display: flex;
     align-items: center;
