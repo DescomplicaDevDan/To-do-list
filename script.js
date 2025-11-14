@@ -42,7 +42,7 @@ function adicionarItem(event) {
 
             inputItem.value = '';
             inputItem.focus();
-            exibirNotificacao("Item adicionado à lista!");
+            exibirNotificacao("Item adicionado à lista!", 'success');
             
         } else {
             exibirNotificacao("O campo do item não pode estar vazio.");
@@ -61,7 +61,7 @@ function removerItem(event) {
             
             salvarItens();
             exibirItens();
-            exibirNotificacao("O Item foi removido da lista!");
+            exibirNotificacao("O Item foi removido da lista!", 'success');;
         }
     }
 }
@@ -82,26 +82,37 @@ function alternarItem(event) {
         if(checkbox.checked) {
             itemTextoElement.style.textDecoration = 'line-through';
             itemTextoElement.style.opacity = '0.6';
-            exibirNotificacao("Item marcado como concluído.");
+            exibirNotificacao("Item marcado como concluído.", 'success');
         } else {
             itemTextoElement.style.textDecoration = 'none';
             itemTextoElement.style.opacity = '1';
-            exibirNotificacao("Item desmarcado.")
+            exibirNotificacao("Item desmarcado.", 'success')
         }
     }
 }
 
-function exibirNotificacao(mensagem) {
+function exibirNotificacao(mensagem, tipo = 'error') {
     clearTimeout(notificationTimeout);
 
     const pTag = notificationError.querySelector('p');
+    const notificationDiv = notificationError;
 
-    if(pTag) {
+    if (pTag) {
         pTag.textContent = mensagem;
     }
-    notificationError.classList.add('show');
+
+    notificationDiv.classList.remove('notification-error', 'notification-success');
+
+    if (tipo === 'success') {
+        notificationDiv.classList.add('notification-success');
+    } else {
+        notificationDiv.classList.add('notification-error');
+    }
+
+    notificationDiv.classList.add('show');
     notificationTimeout = setTimeout(ocultarNotificacao, 3000);
 }
+
 
 function ocultarNotificacao() {
     notificationError.classList.remove('show');

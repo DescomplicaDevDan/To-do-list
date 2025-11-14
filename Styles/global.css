@@ -15,12 +15,13 @@
 
     --color-brand: #7fa653;
     --color-brand-hover: #63783db7;
-    --color-danger: #99cd85;
+    --color-danger: #ff4a4a;
+    --color-success: #63783D;
     
     --content-primary: #343536e8;
     --content-secondary: #343536;
     --content-tertiary: #9CA3AF;
-    --black: #19181879;
+    --black: #191818b9;
 
     --border-primary: #D1D5DB;
     --border-hover: #bdd0b9;
