@@ -61,7 +61,7 @@ function removerItem(event) {
             
             salvarItens();
             exibirItens();
-            exibirNotificacao("O Item foi removido da lista!", 'success');;
+            exibirNotificacao("O Item foi removido da lista!", 'error');;
         }
     }
 }
