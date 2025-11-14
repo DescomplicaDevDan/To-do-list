@@ -11,11 +11,6 @@
 
 # 🛍️ Quicklist: Sua Lista de Compras Inteligente
 
-Status: 🟢 Concluído
-Tecnologias: HTML5, CSS3 & JavaScript (Puro)
-Persistência: Local Storage (Sem perda de dados)
-Tema: Tema Verde Oliva (Sucesso) e Alerta Vermelho (Erro)
-
 ---
 
 ## ✨ Sobre o Projeto
