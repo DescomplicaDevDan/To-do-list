@@ -101,7 +101,7 @@
     justify-content: center;
 
     background-color: var(--color-brand);
-    color: var(--always-write);
+    color: #e5dfdf;
     font: var(--label);
     padding: 0.75rem 1.5rem;
     border: none;
@@ -153,7 +153,7 @@
     -webkit-appearance: none;
     width: 1.1rem;
     height: 1.1rem;
-    border: 2px solid var(--border-primary);
+    border: 2px solid #ffffff97;
     border-radius: 0.375rem;
     cursor: pointer;
     position: relative;
@@ -164,7 +164,7 @@
 }
 
 .checkbox-container input[type="checkbox"]:hover {
-    border-color: var(--border-hover);
+    border-color: rgba(0, 0, 0, 0.148);
 }
 
 .checkbox-container input[type="checkbox"]:checked {
@@ -174,19 +174,19 @@
 
 .checkbox-container input[type="checkbox"]:checked::after {
     content: '✓'; 
-    color: var(--always-write);
-    font-size: 0.8rem; /* Tamanho do '✓' */
+    color: var(--black);
+    font-size: 0.8rem;
     line-height: 1;
     font-weight: 700;
     position: absolute;
-    /* Centraliza o '✓' */
+
 }
 
 .btn-delete {
     background: none;
     border: none;
     cursor: pointer;
-    opacity: 0.5; /* Lixeira discreta, como no Figma */
+    opacity: 1;
     transition: opacity 0.2s ease-in-out;
 }
 .btn-delete img {
@@ -195,7 +195,7 @@
 }
 
 .btn-delete:hover {
-    opacity: 1;
+    opacity: 0.7;
 }
 
 .item-texto {
@@ -238,7 +238,7 @@
 
 .notification-error p {
     font: var(--p);
-    color: var(--always-write);
+    color: var(--black);
     margin: 0;
     display: flex;
     align-items: center;
@@ -251,7 +251,7 @@
     height: 1.25rem;
     
     background-image: url('/assets/icons/warning-circle-filled.svg'); 
-    color: var(--always-write);
+    color: var(--black);
     background-size: contain;
     background-repeat: no-repeat;
     
@@ -262,7 +262,7 @@
        
     background: none;
     border: none;
-    color: var(--always-write); /* Ícone 'X' branco */
+    color: var(--black); /* Ícone 'X' branco */
     cursor: pointer;
     line-height: 1;
 }
@@ -296,11 +296,6 @@
 
 .btn-adicionar {
     width: 100%;
-}
-
-.page-title {
-    font: var(--title);
-    color: #111827;
 }
 
 }

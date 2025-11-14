@@ -10,20 +10,20 @@
 }
 
 :root {
-    --background-primary: #F4F5FB;
-    --background-secondary: #FFFFFF;
+    --background-primary: #e0e6e0;
+    --background-secondary: #83967f63;
 
-    --color-brand: #CA3884;
-    --color-brand-hover: #A52C6B;
-    --color-danger: #C93847;
+    --color-brand: #7fa653;
+    --color-brand-hover: #63783db7;
+    --color-danger: #99cd85;
     
-    --content-primary: #080B12;
-    --content-secondary: #374151;
+    --content-primary: #343536e8;
+    --content-secondary: #343536;
     --content-tertiary: #9CA3AF;
-    --always-write: #FFFFFF;
+    --black: #19181879;
 
     --border-primary: #D1D5DB;
-    --border-hover: #B9C2D0;
+    --border-hover: #bdd0b9;
 
     --font-family: "Inter", sans-serif; 
     --title: 700 1.5rem/1.3 var(--font-family);
