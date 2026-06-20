@@ -26,7 +26,7 @@ O projeto foi construído utilizando apenas o **Vanilla Stack** (HTML, CSS e Jav
 Esta aplicação oferece uma experiência de usuário (UX) completa e com feedback constante:
 
 💾 **Persistência de Dados:** O estado da lista (itens e status `checked`) é salvo e carregado automaticamente usando a API **Local Storage** do navegador.
-✅ **Marcar como Concluído:** Clique no checkbox para riscar o item, indicando conclusão. O status é persistido instantaneamente.
+✅ **Marcar como Concluído:** Clique no checkbox para riscar o item indicando conclusão. O status é persistido instantaneamente.
 🗑️ **Remoção Eficiente:** Remova itens da lista e do armazenamento com o botão de lixeira. A lógica utiliza `event.target.closest()` para garantir remoção robusta.
 🔔 **Notificações Inteligentes:** Exibe pop-ups de feedback temporários e estilizados para confirmar ações (adição, remoção, conclusão e erros), com cores distintas: **Verde Oliva para sucesso** e **Vermelho Forte para alertas/erros**.
 📱 **Design Responsivo:** Layout totalmente adaptado e otimizado para telas móveis e desktop.
